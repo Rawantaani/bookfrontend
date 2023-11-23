@@ -43,7 +43,7 @@ export const Singlebook = () => {
             <Link to={"/books"}> ◀️Books</Link>
             <div className='bookdetails'>
                 <div className='col-1'>
-                    <img src={`http://localhost:8000/uploads/${data?.thumbnail}`}
+                    <img src={`https://bookb.onrender.com/uploads/${data?.thumbnail}`}
                         alt={data?.title} />
                          <Link to={`/editbook/${data.slug}`}>Edit</Link>
                 </div>
