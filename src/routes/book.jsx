@@ -73,7 +73,7 @@ export const Book = () => {
                     <li key={item._id}>
                         <Link to={`/books/${item.slug}`}>
                             <img
-                                src={`http://localhost:8000/uploads/${item.thumbnail}`}
+                                src={`https://bookb.onrender.com/uploads/${item.thumbnail}`}
                                 alt={item.title}
                             />
                             <h3>{item.title}</h3>
