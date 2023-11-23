@@ -57,7 +57,7 @@ function editBook() {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api/books", {
+      const response = await fetch("https://bookb.onrender.com/api/books", {
         method: "PUT",
         body: formData,
       });
@@ -90,7 +90,7 @@ function editBook() {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/api/books/" + bookId,
+        "https://bookb.onrender.com/api/books/" + bookId,
         {
           method: "DELETE",
         }
@@ -128,7 +128,7 @@ function editBook() {
               <img src={`${image}`} alt="preview image" />
             ) : (
               <img
-                src={`http://localhost:8000/uploads/${thumbnail}`}
+                src={`https://bookb.onrender.com/uploads/${thumbnail}`}
                 alt="preview image"
               />
             )}
